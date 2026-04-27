@@ -1,139 +1,553 @@
 <!doctype html>
-<html lang="en">
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
 </head>
-<body class="bg-[#FFF5F0] flex flex-col h-screen font-outfit">
-<header class="px-2 pt-2">
-  <div class="border py-2 rounded-xl bg-linear-to-r from-orange-200 to-orange-300  flex items-center justify-center">
-    <p class="text-center  text-xl">Admission is Open, Grab your seat now  <i class="fa fa-arrow-right" aria-hidden="true"></i></p>
-</div>
-<div class="border-2 rounded-xl flex justify-between mt-4">
-    <a href="" class="flax items-center bg-orange-300 py-4 rounded-l-xl  flex items-center  ">
-      <img src="/src/images/shape-14.svg" alt="" class="h-8">  Little Learners
-    </a>
-    <div class="flex-grow border-2 "></div>
-    <nav class="flex ">
-      <a href="" class="flex items-center border-2 py-4 px-2 bg-orange-100">Home</a>
-      <a href="" class="flex items-center border-2 py-4 px-2">About Us</a>
-      <a href="" class="flex items-center border-2 py-4 px-2">Academics</a>
-      <a href=""class="flex items-center border-2 py-4 px-2">Admissions</a>
-      <a href=""class="flex items-center border-2 py-4 px-2">Student Life</a>
-      <a href=""class="flex items-center  py-4 px-2 bg-orange-300 rounded-r-xl ">Contact</a>
-    </nav>
-    </div>
-</header>
-  <main  class=" container mx-auto flex-grow">
+<body class="bg-orange-50 flex flex-col h-screen font-outfit">
+    <header class="px-2 pt-2 grid gap-y-4">
+        <div class="border-2 py-2 rounded-xl bg-linear-to-r from-orange-200 to-orange-400 flex items-center justify-center gap-x-4">
+            <p class="text-xl">Admission is Open, Grab your seat now <i class="fa fa-arrow-right" aria-hidden="true"></i></p>       
+        </div>
+        <div class="flex w-full items-center">
+            <a href="" class="flex items-center bg-orange-400 py-4 px-2 rounded-l-xl border-l-2 border-y-2">
+                <img src="images/logo.png" alt="" class="h-8">
+                Little Learners
+            </a>
+            <div class="flex-grow border-y-2 h-full"></div>
+            <nav class="flex h-full">
+                <a href="" class="flex items-center px-4 border-s-2 border-y-2 h-full hover:bg-orange-200">Home</a>
+                <a href="" class="flex items-center px-4 border-s-2 border-y-2 h-full hover:bg-orange-200">About Us</a>
+                <a href="" class="flex items-center px-4 border-s-2 border-y-2 h-full hover:bg-orange-200">Admissions</a>
+                <a href="" class="flex items-center px-4 border-s-2 border-y-2 h-full hover:bg-orange-200">Student Life</a>
+                <a href="" class="flex items-center px-4 border-s-2 border-r-2 border-y-2 h-full rounded-r-xl bg-orange-400">Contact</a>
+            </nav>
+        </div>
+    </header>
+  <main class="flex-grow container mx-auto py-16 grid gap-y-40">
+    <section class="grid grid-cols-2 gap-x-10 items-center">
+        <div>
+            <img src="images/first_display.jpg" alt="first_display" class="h-[700px] w-full object-cover shadow-2xl rounded-2xl">
+        </div>
+        <div class="grid gap-y-10">
+            <div>
+                <span class="font-medium underline text-2xl">Welcome to Little Learners Academy</span>
+                <h1 class="font-raleway text-5xl/16 font-extrabold">Where Young Minds Blossom and <span class="text-orange-400">Dreams Take Flight.</span></h1>
+                <p class="font-medium py-6 text-xl">Our kinder garden school provides a nurturing and stimulating environment, fostering a love for learning that lasts a lifetime. Join us as we embark on an exciting educational journey together!</p>
+            </div>
+            <ul class="grid grid-cols-3 p-6 border-2 rounded-2xl shadow-[6px_6px_orange] bg-orange-100">
+                <li class="grid gap-y-2">
+                    <h2 class="text-4xl font-extrabold">+7000</h2>
+                    <span class="text-sm">Students Passed Out</span>    
+                </li>
+                <li class="grid gap-y-2">
+                    <h2 class="text-4xl font-extrabold">+37</h2>
+                    <span class="text-sm">Awards & Recognitions</span> 
+                </li>
+                <li class="grid gap-y-2">
+                    <h2 class="text-4xl font-extrabold">+15</h2>
+                    <span class="text-sm">Experience Educators</span>   
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="grid gap-y-16">
+        <div class="grid gap-y-6 justify-items-center">
+            <span class="border-2 px-4 py-2 bg-gray-50 rounded-xl">Children Deserve Bright Future</span>
+            <h2 class="font-raleway font-extrabold text-4xl">Our Benefits</h2>
+            <p class="text-xl w-2/3 text-center">With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child's future.</p>
+        </div>
+        <div class="grid grid-cols-3 gap-16">
+            <article class="border-2 rounded-2xl shadow-[6px_6px_black] pt-16 px-6 pb-6 relative bg-gray-50">
+                <div class="grid gap-y-4">
+                    <h3 class="font-raleway text-2xl">Holistic Learning Approach</h3>
+                    <p>Our curriculum focuses on nurturing cognitive, social, emotional, and physical development, ensuring a well-rounded education.</p>
+                </div>
+                <div class="h-14 w-14 flex items-center justify-center bg-orange-200 border-2 justify-self-center rounded text-2xl absolute -top-7 left-10">
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                </div>
+            </article>
+            <article class="border-2 rounded-2xl shadow-[6px_6px_black] pt-16 px-6 pb-6 relative bg-gray-50">
+                <div class="grid gap-y-4">
+                    <h3 class="font-raleway text-2xl">Experienced Educators</h3>
+                    <p>Our passionate and qualified teachers create a supportive and stimulating learning environment.</p>
+                </div>
+                <div class="h-14 w-14 flex items-center justify-center bg-orange-200 border-2 justify-self-center rounded text-2xl absolute -top-7 left-10">
+                    <i class="fa fa-wheelchair" aria-hidden="true"></i>
+                </div>
+            </article>
+            <article class="border-2 rounded-2xl shadow-[6px_6px_black] pt-16 px-6 pb-6 relative bg-gray-50">
+                <div class="grid gap-y-4">
+                    <h3 class="font-raleway text-2xl">Nurturing Environment</h3>
+                    <p>We prioritize safety and provide a warm and caring atmosphere for every child.</p>
+                </div>
+                <div class="h-14 w-14 flex items-center justify-center bg-orange-200 border-2 justify-self-center rounded text-2xl absolute -top-7 left-10">
+                    <i class="fa fa-plug" aria-hidden="true"></i>
+                </div>
+            </article>
+            <article class="border-2 rounded-2xl shadow-[6px_6px_black] pt-16 px-6 pb-6 relative bg-gray-50">
+                <div class="grid gap-y-4">
+                    <h3 class="font-raleway text-2xl">Play-Based Learning</h3>
+                    <p>We believe in the power of play to foster creativity, problem-solving skills, and imagination.</p>
+                </div>
+                <div class="h-14 w-14 flex items-center justify-center bg-orange-200 border-2 justify-self-center rounded text-2xl absolute -top-7 left-10">
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                </div>
+            </article>
+            <article class="border-2 rounded-2xl shadow-[6px_6px_black] pt-16 px-6 pb-6 relative bg-gray-50">
+                <div class="grid gap-y-4">
+                    <h3 class="font-raleway text-2xl">Individualized Attention</h3>
+                    <p>Our small class sizes enable personalized attention, catering to each child's unique needs.</p>
+                </div>
+                <div class="h-14 w-14 flex items-center justify-center bg-orange-200 border-2 justify-self-center rounded text-2xl absolute -top-7 left-10">
+                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </div>
+            </article>
+            <article class="border-2 rounded-2xl shadow-[6px_6px_black] pt-16 px-6 pb-6 relative bg-gray-50">
+                <div class="grid gap-y-4">
+                    <h3 class="font-raleway text-2xl">Parent Involvement</h3>
+                    <p>We foster a strong parent-school partnership to ensure seamless communication and collaboration.</p>
+                </div>
+                <div class="h-14 w-14 flex items-center justify-center bg-orange-200 border-2 justify-self-center rounded text-2xl absolute -top-7 left-10">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                </div>
+            </article>
+        
+        </div>
+    </section>
+    <section class="grid gap-y-16">
+        <div class="grid gap-y-6 justify-items-center">
+            <span class="border-2 px-4 py-2 bg-gray-50 rounded-xl">Their Happy Words</span>
+            <h2 class="font-raleway font-extrabold text-4xl">Our Testimonials</h2>
+            <p class="text-xl w-2/3 text-center">Our testimonials are heartfelt reflections of the nurturing environment we provide, where children flourish both academically and emotionally.</p>
+        </div>
+        <div class="relative">
+            <ul class="grid grid-cols-3 gap-x-6 px-20 " >
+                <li class="bg-gray-50 border-2 rounded-2xl shadow-[6px_6px_black] grid gap-y-6 justify-items-center p-6">
+                    <div class="grid gap-y-4">
+                        <div class="border h-20 w-20 flex justify-center items-center rounded-[100%]">
+                            <img src="images/Icon1.png" alt="">
+                        </div>
+                        <h3 class="text-2xl font-bold">Jennifer B</h3>
+                    </div>
+                    <div class="flex gap-x-2">
+                        <img src="images/Shape.png" alt="">
+                        <img src="images/Shape.png" alt="">
+                        <img src="images/Shape.png" alt="">
+                        <img src="images/Shape.png" alt="">
+                        <img src="images/Shape.png" alt="">
+                    </div>
+                    <p class="text-xl text-center">Little Learners Academy has been a second home for my child. The caring staff and engaging programs have made her excited to go to school every day!</p>
+                </li>
+                <li class="bg-gray-50 border-2 rounded-2xl shadow-[6px_6px_black] grid gap-y-6 justify-items-center p-6">
+                    <div class="grid justify-items-center gap-y-4">
+                        <div class="border h-20 w-20 flex justify-center items-center rounded-[100%]">
+                            <img src="images/Icon2.png" alt="">
+                        </div>
+                        <h3 class="text-2xl font-bold">David K</h3>
+                    </div>
+                    <div class="flex gap-x-2">
+                        <img src="images/Shape.png" alt="">
+                        <img src="images/Shape.png" alt="">
+                        <img src="images/Shape.png" alt="">
+                        <img src="images/Shape.png" alt="">
+                        <img src="images/Shape.png" alt="">
+                    </div>
+                    <p class="text-xl text-center">Choosing Little Learners Academy for my daughter was the best decision. She has thrived in their nurturing and stimulating environment.</p>
+                </li>
+                <li class="bg-gray-50 border-2 rounded-2xl shadow-[6px_6px_black] grid gap-y-6 justify-items-center p-6">
+                    <div class="grid justify-items-center gap-y-4">
+                        <div class="border h-20 w-20 flex justify-center items-center rounded-[100%]">
+                            <img src="images/Icon3.png" alt="">
+                        </div>
+                        <h3 class="text-2xl font-bold">Emily L</h3>
+                    </div>
+                    <div class="flex gap-x-2">
+                        <img src="images/Shape.png" alt="">
+                        <img src="images/Shape.png" alt="">
+                        <img src="images/Shape.png" alt="">
+                        <img src="images/Shape.png" alt="">
+                        <img src="images/Shape.png" alt="">
+                    </div>
+                    <p class="text-xl  text-center">My son's social and academic growth has been remarkable since joining Little Learners Academy. I am grateful for the supportive and dedicated teachers.</p>
+                </li>
+            </ul>
+            <div class="flex justify-between absolute top-0 w-full h-full items-center">
+                <div class="w-10 h-10 bg-gray-50 flex justify-center items-center border rounded cursor-pointer">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                </div>
+                <div class="w-10 h-10 bg-gray-50 flex justify-center items-center border rounded cursor-pointer">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
 
-  <section class="py-8 grid grid-cols-2 gap-x-20 items-center ">
-<div class=""><img src="./images/3466a83a1c0be16b83eca797adc9c92ab0ab256a.png" alt="first_display" class="h-[500px] object-contain w-full shadow-2xl rounded-2xl invert-2 bg-amber-100"></div>
-<div>
-  <div class="underline ">Welcome to Little Learners Academy</div> 
-  <h2 class="text-4xl ">Where Young Minds Blossom and 
-    <div class="text-orange-400 ">Dreams Take Flight.</div></h2> 
-    <div class="pt-4"> Our kinder garden school provides a nurturing and stimulating environment, fostering a love for learning that lasts a lifetime. Join us as we embark on an exciting educational journey together!</div>
-  <div class="pt-4">
-    <ul class="grid grid-cols-3 p-6 border-2 rounded-2xl  shadow-[6px_6px_orange] bg-orange-100 ">
-    <li>
-      <h2 class="text-4xl font-extrabold">+7000</h2>
-      <h2 class="pt-2">Students Passed Out</h2>
-    </li>
-   <li>
-      <h2 class="text-4xl font-extrabold">+37</h2>
-<h2 class="pt-2">Awards & Recognitions</h2>
-    </li>
- <li>
-      <h2 class="text-4xl font-extrabold">+15</h2>
-  <h2 class="pt-2">Experience Educators</h2>
-    </li>
-  </ul>
-</div>
-  </div>
-  </section>
+        </div>
+    </section>
 
-
-
-  <section class="">
-   <div class="grid justify-center gap-8  justify-items-center" >
-    <span class="border-2 p-4 bg-gray-50 rounded-xl">
-Children Deserve Bright Future
-    </span>
-<h2 class="font-raleway font-extrabold text-4xl">Our Benefits</h2>
-<p class="text-2xl text-center w-2/3">With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child's future.</p>
-   </div>
-
-
-  
-<div class="grid grid-cols-3 gap-16 pt-24">
-
-   <article class="border-2 rounded-2xl bg-gray-50 shadow-[6px_6px_orange] pt-12 px-6 pd-6 relative">
-      <div>
-     <h3 class="font-raleway text-2xl">Holistic Learning Approach</h3>
-     <p>Our curriculum focuses on nurturing cognitive, social, emotional, and physical development, ensuring a well-rounded education.</p>
-    </div>
-<div class="p-6 bg-orange-200 border-2 justify-self-center center rounded text-2xl absolute -top-7 left-10  ">
-  <i class="fa fa-graduation-cap " aria-hidden="true"></i>
-   </article>
     
-   <article class="border-2 rounded-2xl bg-gray-50 shadow-[6px_6px_orange] pt-12 px-6 pd-6 relative">
-      <div>
-     <h3 class="font-raleway text-2xl">Holistic Learning Approach</h3>
-     <p>Our curriculum focuses on nurturing cognitive, social, emotional, and physical development, ensuring a well-rounded education.</p>
+    <section class="grid gap-y-16">
+        <div class="grid gap-y-6 justify-items-center">
+            <span class="border-2 px-4 py-2 bg-gray-50 rounded-xl">Solutions For The Doubts</span>
+            <h2 class="font-raleway font-extrabold text-4xl">Frequently Asked Questions</h2>
+            <p class="text-xl w-2/3 text-center">Find all the essential information you need in our FAQ section, designed to address the most frequently asked questions and help you make informed decisions for your child's education.</p>
+        </div>
+      <div class="grid grid-cols-2 gap-4">
+  <ul class="space-y-4 gap-16">
+            <li 
+            x-data="{ open: true }" 
+            :class="open ? 'bg-gray-50' : 'bg-orange-50'"
+            class="border-2 p-6 grid grid-cols-[1fr_40px] gap-x-8 rounded-xl transition-all duration-300 overflow-hidden">
+                <div class="grid gap-y-6">
+                    <h4 class="font-bold text-xl">What are the school hours at Little Learners Academy?</h4>
+                    <template x-if="open">
+                        <div class="grid gap-y-6">
+                            <hr class="border">
+                            <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
+                        </div>
+                    </template>
+                </div>
+                <div 
+                    class="border-2 h-[40px] flex justify-center items-center rounded bg-orange-50 self-start cursor-pointer"
+                    @click="open = !open">
+                    <i x-show="!open" class="fa fa-minus" aria-hidden="true"></i>
+                    <i x-show="open" class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+            </li>
+            <li 
+            x-data="{ open: false }" 
+            :class="open ? 'bg-gray-50' : 'bg-orange-50'"
+            class="border-2 p-6 grid grid-cols-[1fr_40px] gap-x-8 rounded-xl transition-all duration-300 overflow-hidden">
+                <div class="grid gap-y-6">
+                    <h4 class="font-bold text-xl">What are the school hours at Little Learners Academy?</h4>
+                    <template x-if="open">
+                        <div class="grid gap-y-6">
+                            <hr class="border">
+                            <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
+                        </div>
+                    </template>
+                </div>
+                <div 
+                    class="border-2 h-[40px] flex justify-center items-center rounded bg-orange-50 self-start cursor-pointer"
+                    @click="open = !open">
+                    <i x-show="!open" class="fa fa-minus" aria-hidden="true"></i>
+                    <i x-show="open" class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+            </li>
+            <li 
+            x-data="{ open: false }" 
+            :class="open ? 'bg-gray-50' : 'bg-orange-50'"
+            class="border-2 p-6 grid grid-cols-[1fr_40px] gap-x-8 rounded-xl transition-all duration-300 overflow-hidden">
+                <div class="grid gap-y-6">
+                    <h4 class="font-bold text-xl">What are the school hours at Little Learners Academy?</h4>
+                    <template x-if="open">
+                        <div class="grid gap-y-6">
+                            <hr class="border">
+                            <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
+                        </div>
+                    </template>
+                </div>
+                <div 
+                    class="border-2 h-[40px] flex justify-center items-center rounded bg-orange-50 self-start cursor-pointer"
+                    @click="open = !open">
+                    <i x-show="!open" class="fa fa-minus" aria-hidden="true"></i>
+                    <i x-show="open" class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+            </li>
+            <li 
+            x-data="{ open: false }" 
+            :class="open ? 'bg-gray-50' : 'bg-orange-50'"
+            class="border-2 p-6 grid grid-cols-[1fr_40px] gap-x-8 rounded-xl transition-all duration-300 overflow-hidden">
+                <div class="grid gap-y-6">
+                    <h4 class="font-bold text-xl">What are the school hours at Little Learners Academy?</h4>
+                    <template x-if="open">
+                        <div class="grid gap-y-6">
+                            <hr class="border">
+                            <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
+                        </div>
+                    </template>
+                </div>
+              
+                <div 
+                    class="border-2 h-[40px] flex justify-center items-center rounded bg-orange-50 self-start cursor-pointer"
+                    @click="open = !open">
+                    <i x-show="!open" class="fa fa-minus" aria-hidden="true"></i>
+                    <i x-show="open" class="fa fa-plus" aria-hidden="true"></i>
+                </div>  </ul>
+                  <ul class="space-y-4">
+            </li>
+            <li 
+            x-data="{ open: false }" 
+            :class="open ? 'bg-gray-50' : 'bg-orange-50'"
+            class="border-2 p-6 grid grid-cols-[1fr_40px] gap-x-8 rounded-xl transition-all duration-300 overflow-hidden">
+                <div class="grid gap-y-6">
+                    <h4 class="font-bold text-xl">What are the school hours at Little Learners Academy?</h4>
+                    <template x-if="open">
+                        <div class="grid gap-y-6">
+                            <hr class="border">
+                            <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
+                        </div>
+                    </template>
+                </div>
+                <div 
+                    class="border-2 h-[40px] flex justify-center items-center rounded bg-orange-50 self-start cursor-pointer"
+                    @click="open = !open">
+                    <i x-show="!open" class="fa fa-minus" aria-hidden="true"></i>
+                    <i x-show="open" class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+            </li>
+            <li 
+            x-data="{ open: false }" 
+            :class="open ? 'bg-gray-50' : 'bg-orange-50'"
+            class="border-2 p-6 grid grid-cols-[1fr_40px] gap-x-8 rounded-xl transition-all duration-300 overflow-hidden">
+                <div class="grid gap-y-6">
+                    <h4 class="font-bold text-xl">What are the school hours at Little Learners Academy?</h4>
+                    <template x-if="open">
+                        <div class="grid gap-y-6">
+                            <hr class="border">
+                            <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
+                        </div>
+                    </template>
+                </div>
+                <div 
+                    class="border-2 h-[40px] flex justify-center items-center rounded bg-orange-50 self-start cursor-pointer"
+                    @click="open = !open">
+                    <i x-show="!open" class="fa fa-minus" aria-hidden="true"></i>
+                    <i x-show="open" class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+            </li>
+            <li 
+            x-data="{ open: false }" 
+            :class="open ? 'bg-gray-50' : 'bg-orange-50'"
+            class="border-2 p-6 grid grid-cols-[1fr_40px] gap-x-8 rounded-xl transition-all duration-300 overflow-hidden">
+                <div class="grid gap-y-6">
+                    <h4 class="font-bold text-xl">What are the school hours at Little Learners Academy?</h4>
+                    <template x-if="open">
+                        <div class="grid gap-y-6">
+                            <hr class="border">
+                            <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
+                        </div>
+                    </template>
+</div>
+<div 
+class="border-2 h-[40px] flex justify-center items-center rounded bg-orange-50 self-start cursor-pointer"
+@click="open = !open">
+<i x-show="!open" class="fa fa-minus" aria-hidden="true"></i>
+<i x-show="open" class="fa fa-plus" aria-hidden="true"></i>
+</div>
+</li>
+ <li 
+ x-data="{ open: false }" 
+:class="open ? 'bg-gray-50' : 'bg-orange-50'"
+class="border-2 p-6 grid grid-cols-[1fr_40px] gap-x-8 rounded-xl transition-all duration-300 overflow-hidden">
+                <div class="grid gap-y-6">
+                    <h4 class="font-bold text-xl">What are the school hours at Little Learners Academy?</h4>
+                    <template x-if="open">
+                        <div class="grid gap-y-6">
+                            <hr class="border">
+                            <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
+                        </div>
+                    </template>
+                </div>
+                <div 
+                    class="border-2 h-[40px] flex justify-center items-center rounded bg-orange-50 self-start cursor-pointer"
+                    @click="open = !open">
+                    <i x-show="!open" class="fa fa-minus" aria-hidden="true"></i>
+                    <i x-show="open" class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+            </li>
+
+         </ul>
+</div>
+    </section>
+     
+    <section class="grid gap-y-16 justify-items-center ">
+    <div class="grid gap-y-8 justify-items-center">
+        <span class="border-2 py-2 px-10 bg-gray-50 rounded">Explore More</span>
+        <h2 class="font-raleway font-extrabold text-5xl">Navigate through our Pages</h2>
+        <p class="text-xl w-2/3 text-center ">Your gateway to discovering a wealth of valuable information about our kindergarten school, Feel free to explore and learn more about the enriching experiences that await your child at our kindergarten school</p>
     </div>
-<div class="p-6 bg-orange-200 border-2 justify-self-center center rounded text-2xl absolute -top-7 left-10  ">
-  <i class="fa fa-headphones" aria-hidden="true"></i>
 
-   </article>
+<div class="grid grid-cols-2 gap-12 py-4">
 
-    <article class="border-2 rounded-2xl bg-gray-50 shadow-[6px_6px_orange] pt-12 px-6 pd-6 relative">
-      <div>
-     <h3 class="font-raleway text-2xl">Holistic Learning Approach</h3>
-     <p>Our curriculum focuses on nurturing cognitive, social, emotional, and physical development, ensuring a well-rounded education.</p>
+<article class="container mx-auto border-2 rounded-2xl bg-gray-50 py-16  shadow-[6px_6px_black]">
+ <div class="grid gap-y-8 px-16">
+  <h3 class="font-raleway text-4xl text-center font-bold">About Us</h3>
+   <img class="" src="./images/Container (1).png" alt="">
+                
+                <p class=" font-bold my-12 text-center">Discover our Mission, Values, and our unwavering commitment to providing the best learning experience for your child. Learn about our passionate educators and our engaging approach to early education.</p>
+                <div class="text-center my-12 ">
+             <button class=" bg-orange-100
+border-2 border-black rounded-xl py-4 w-full
+shadow-[6px_6px_black] ">
+    Learn More  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+</button>
+</div>
+           
+        </article>
+       <article class="container mx-auto border-2 rounded-2xl bg-gray-50 py-16  shadow-[6px_6px_black]">
+                <div class="grid gap-y-8 px-16">
+                <h3 class="font-raleway text-4xl text-center font-bold">Academics</h3>
+                <img class="" src="./images/Container (1).png" alt="">
+                
+                <p class=" font-bold my-12 text-center  ">Delve into our comprehensive academic programs designed to stimulate young minds, foster creativity, and encourage a love for learning. Explore our well-rounded curriculum that nurtures both intellectual and social development.</p>
+                <div class="text-center my-12 ">
+             <button class=" bg-orange-100
+border-2 border-black rounded-xl py-4 w-full
+shadow-[6px_6px_black] ">
+    Learn More  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+</button>
+</div>
+           
+        </article>
+      <article class="container mx-auto border-2 rounded-2xl bg-gray-50 py-16  shadow-[6px_6px_black]">
+                <div class="grid gap-y-8 px-16">
+                <h3 class="font-raleway text-4xl text-center font-bold">Student Life</h3>
+                <img class="" src="./images/Container (1).png" alt="">
+                
+                <p class=" font-bold my-12 text-center">Peek into the vibrant and enriching world of Student Life at Little Learners Academy. Discover the array of extracurricular activities, arts and crafts, sports, and social events that make our school experience truly memorable.</p>
+                <div class="text-center my-12 ">
+             <button class=" bg-orange-100
+border-2 border-black rounded-xl py-4 w-full
+shadow-[6px_6px_black] ">
+    Learn More  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+</button>
+</div>
+           
+        </article>
+      <article class="container mx-auto border-2 rounded-2xl bg-gray-50 py-16  shadow-[6px_6px_black]">
+                <div class="grid gap-y-8 px-16">
+                <h3 class="font-raleway text-4xl text-center font-bold">Admissions</h3>
+                <img class="" src="./images/Container (1).png" alt="">
+                
+                <p class=" font-bold my-12 text-center">Learn about our Enrollment Process and how to secure your child's place at Little Learners Academy. Find information about our admission requirements, application deadlines, and available spaces.</p>
+                <div class="text-center my-12 ">
+             <button class=" bg-orange-100
+border-2 border-black rounded-xl py-4 w-full
+shadow-[6px_6px_black] ">
+    Learn More  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+</button>
+</div>
+           
+        </article>
+
+</section>
+
+<footer class="py-10">
+    <div class="container mx-auto border-2 rounded-2xl bg-gray-50 px-25 py-20 shadow-[6px_6px_black]">
+      
+      <div class="flex gap-12">
+        
+        <div class="flex-2 grid gap-y-6">
+          <a href="#" class="flex items-center gap-x-3 font-bold text-lg">
+            <img src="images/logo.png" alt="Little Learners" class="h-8">
+            Little Learners
+          </a>
+
+          <p class="text-sm font-medium leading-relaxed">
+            We believe in the power of play to foster creativity,<br>
+            problem-solving skills, and imagination.
+          </p>
+
+          <ul class="grid gap-y-4 ">
+            <li class="flex items-center gap-x-3">
+              <div class="h-10 w-10 border-2 rounded-lg flex items-center justify-center bg-orange-100 rounded">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </div>
+              <div class="font-medium">     hello@littlelearners.com</div>
+         
+            </li>
+            <li class="flex items-center gap-x-3">
+              <div class="h-10 w-10 border-2 rounded-lg flex items-center justify-center bg-orange-100 rounded">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </div>
+               <div class="font-medium">
+              +22 88899 23 2309</div>
+              
+            </li>
+            <li class="flex items-center gap-x-3">
+              <div class="h-10 w-10 border-2 rounded-lg flex items-center justify-center bg-orange-100  rounded">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </div>
+               <div class="font-medium"> Somewhere in the World</div>
+             
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex flex-1 gap-x-10 mx-20 ">   
+          
+          <div class="flex-1  px-10 font-medium">
+            <h5 class="font-bold mb-4 ">Home</h5>
+            <ul class="grid gap-y-4 text-sm">  
+              <li><a href="#" >Features</a></li>
+              <li><a href="#" >Our Testimonials</a></li>
+              <li><a href="#" >FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="flex-1 px-10  font-medium">
+            <h5 class="font-bold mb-4">About Us</h5>
+            <ul class="grid gap-y-4 text-sm">
+              <li><a href="#" >Our Mission</a></li>
+              <li><a href="#">Our Vision</a></li>
+              <li><a href="#" >Awards and Recognitions</a></li>
+              <li><a href="#" >History</a></li>
+              <li><a href="#" >Teachers</a></li>
+            </ul>
+          </div>
+
+          <div class="flex-1 px-10  font-medium">
+            <h5 class="font-bold mb-4">Academics</h5>
+            <ul class="grid gap-y-4 text-sm">
+              <li><a href="#">Special Features</a></li>
+              <li><a href="#" >Gallery</a></li>
+            </ul>
+          </div>
+
+          <div class="flex-1 px-10 font-medium">
+            <h5 class="font-bold mb-4">Contact Us</h5>
+            <ul class="grid gap-y-4 ">
+              <li><a href="#" class="text-sm" >Information</a></li>
+              <li><a href="#" class="text-sm">Map & Direction</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-gray-400 my-8    ">
+      <div class="flex justify-between items-center text-sm font-medium">
+        <div class="flex gap-x-4">
+          <a href="#">Terms of Service</a>
+          <span class="text-gray-400 ">|</span>
+          <a href="#" >Privacy Policy</a>
+          <span class="text-gray-400">|</span>
+          <a href="#" >Cookie Policy</a>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4 ">
+          <a href="#" class="h-10 w-10 border-2 rounded-lg flex items-center justify-center bg-orange-200 hover:bg-orange-300 rounded">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="h-10 w-10 border-2 rounded-lg flex items-center justify-center bg-orange-200 hover:bg-orange-300 rounded">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="h-10 w-10 border-2 rounded-lg flex items-center justify-center bg-orange-200 hover:bg-orange-300 rounded ">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </div>
+  </div>
+ <hr class="border-gray-400 my-8 h-8">
+ <p class="text-center text-sm">
+ Copyright © 2023 Little Learners Academy. All rights reserved.
+      </p>
     </div>
-<div class="p-6 bg-orange-200 border-2 justify-self-center center rounded text-2xl absolute -top-7 left-10  ">
-  <i class="fa fa-stethoscope" aria-hidden="true"></i>
-   </article>
-
-    <article class="border-2 rounded-2xl bg-gray-50 shadow-[6px_6px_orange] pt-12 px-6 pd-6 relative">
-      <div>
-     <h3 class="font-raleway text-2xl">Holistic Learning Approach</h3>
-     <p>Our curriculum focuses on nurturing cognitive, social, emotional, and physical development, ensuring a well-rounded education.</p>
-    </div>
-<div class="p-6 bg-orange-200 border-2 justify-self-center center rounded text-2xl absolute -top-7 left-10  ">
-<i class="fa fa-flag" aria-hidden="true"></i>
-
-   </article>
-
-    <article class="border-2 rounded-2xl bg-gray-50 shadow-[6px_6px_orange] pt-12 px-6 pd-6 relative">
-      <div>
-     <h3 class="font-raleway text-2xl">Holistic Learning Approach</h3>
-     <p>Our curriculum focuses on nurturing cognitive, social, emotional, and physical development, ensuring a well-rounded education.</p>
-    </div>
-<div class="p-6 bg-orange-200 border-2 justify-self-center center rounded text-2xl absolute -top-7 left-10  ">
-<i class="fa fa-life-ring" aria-hidden="true"></i>
-   </article>
-
-     <article class="border-2 rounded-2xl bg-gray-50 shadow-[6px_6px_orange] pt-12 px-6 pd-6 relative">
-      <div>
-     <h3 class="font-raleway text-2xl">Holistic Learning Approach</h3>
-     <p>Our curriculum focuses on nurturing cognitive, social, emotional, and physical development, ensuring a well-rounded education.</p>
-    </div>
-<div class="p-6 bg-orange-200 border-2 justify-self-center center rounded text-2xl absolute -top-7 left-10  ">
-<i class="fa fa-users" aria-hidden="true"></i>
-   </article>
-
-   
-  </section>
-
-
-
-
-  </main>
-  <footer></footer>
+</footer>
+</main>
+<script>
+</script>
 </body>
 </html>
-
